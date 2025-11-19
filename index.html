@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="pt-[20px] fixed w-full   pb-[20px] ">
+        <div class=" px-[20px] flex  justify-between  items-center">
+            <div>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="#191919" fill-rule="evenodd"
+                        d="M7 7c0 1.043.533 1.963 1.341 2.5A3 3 0 0 0 7 12c0 1.043.533 1.963 1.341 2.5A3 3 0 1 0 13 17v-2.764A3 3 0 1 0 16.659 9.5 3 3 0 0 0 15 4h-5a3 3 0 0 0-3 3m8 2a2 2 0 1 0 0-4h-2v4zm-2 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0m-1 2h-2a2 2 0 1 1 0-4h2zm-2 1h2v2a2 2 0 1 1-2-2m2-6h-2a2 2 0 1 1 0-4h2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class=" flex gap-[20px] items-center ">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="#191919" fill-rule="evenodd"
+                        d="M6.5 6a.5.5 0 0 1 .5.5V7h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7v2.5a.5.5 0 0 1-1 0v-12a.5.5 0 0 1 .5-.5M7 8v7h10V8zm6.854 1.446a.5.5 0 0 1 0 .707L12.707 11.3l1.147 1.146a.5.5 0 0 1-.708.707L12 12.007l-1.146 1.146a.5.5 0 0 1-.708-.707l1.147-1.146-1.147-1.147a.5.5 0 0 1 .708-.707L12 10.593l1.146-1.147a.5.5 0 0 1 .708 0"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <button class="border-[1px] border-[black] px-[10px] py-[5px] text-[white] bg-[black]">
+                    Remix with Figma Make
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <aside class="pt-[60px] fixed pb-[40px] ">
+        <section>
+            <div class=" ">
+                <div class="p-4 border-[1px] border-[black]/30 w-[300px] [black]/30 flex items-center justify-between ">
+                    <div class="flex items-center  gap-2 w-[300px]">
+
+                        <div
+                            class="w-8 h-8  bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-graduation-cap h-5 w-5 text-white"
+                                aria-hidden="true">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg>
+                        </div>
+                        <h1 class=" text-[24px]">EduAdmin</h1>
+                    </div><button data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-9 h-8 w-8 rounded-full"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left h-4 w-4" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="  ">
+                <div class=" border-[1px] pb-[400px] border-[black]/30 w-[300px] pl-[20px]  ">
+                    <div class="pt-[20px]  mb-[20px] ">
+                        <button
+                            class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0"
+                                aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg> <span id="about" class=""><a href="./index.html">Dashboart</a></span></button>
+                    </div>
+                    <button
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0" aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg><span class=""><a href="./pages/preyekt1.html">Teachers</a></span></button>
+                    <button
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-graduation-cap h-5 w-5 flex-shrink-0" aria-hidden="true">
+                            <path
+                                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                            </path>
+                            <path d="M22 10v6"></path>
+                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                        </svg><span><a href="./pages/preyekt2.html">Students</a></span></button>
+                    <button
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-settings h-5 w-5 flex-shrink-0" aria-hidden="true">
+                            <path
+                                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                            </path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg><span>Settings</span></button>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <main class="pt-[60px] pl-[300px] ">
+        <section id="about">
+            <section>
+                <div class="border h-[70px] border-[black]/30">
+                    <div class=" flex justify-between pr-[30px] items-center pt-[15px] pl-[30px]">
+                        <h1 class="text-[30px] font-[400]">
+                            School Managament System
+                        </h1>
+                        <div class=" border w-[40px] h-[40px] p-[10px] rounded-[50%]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-moon h-5 w-5" aria-hidden="true">
+                                <path
+                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="pl-[30px] pt-[20px]">
+                    <h1 class="text-[25px] font-[300px]">
+                        Dashboart Overvies
+                    </h1>
+                    <p class=" text-[20px] font-[100]">
+                        Welcome to your school managament dashboart
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class=" flex gap-[10px] pl-[20px] pt-[50px] pb-[50px]">
+                    <div
+                        class="border border-[black]/30 rounded-[20px] w-[400px] h-[100px] flex pt-[10px] gap-[200px]  items-center">
+                        <div class="pl-[30px] ">
+                            <p class="text-[18px] text-[black]/60 pb-[5px]">
+                                Total Teachers
+                            </p>
+                            <h1>
+                                24
+                            </h1>
+                        </div>
+                        <div class="bg-[black]/10  w-[50px] h-[50px] rounded-[10px] pt-[10px] pl-[13px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-users h-6 w-6 text-blue-600 dark:text-blue-400" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-[black]/30 rounded-[20px] w-[400px] h-[100px] flex pt-[10px] gap-[200px]  items-center">
+                        <div class="pl-[30px] ">
+                            <p class="text-[18px] text-[black]/60 pb-[5px]">
+                                Total Teachers
+                            </p>
+                            <h1>
+                                24
+                            </h1>
+                        </div>
+                        <div class="bg-[black]/10  w-[50px] h-[50px] rounded-[10px] pt-[10px] pl-[13px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-users h-6 w-6 text-blue-600 dark:text-blue-400" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-[black]/30 rounded-[20px] w-[400px] h-[100px] flex pt-[10px] gap-[200px]  items-center">
+                        <div class="pl-[30px] ">
+                            <p class="text-[18px] text-[black]/60 pb-[5px]">
+                                Total Teachers
+                            </p>
+                            <h1>
+                                24
+                            </h1>
+                        </div>
+                        <div class="bg-[black]/10  w-[50px] h-[50px] rounded-[10px] pt-[10px] pl-[13px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-users h-6 w-6 text-blue-600 dark:text-blue-400" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-[black]/30 rounded-[20px] w-[400px] h-[100px] flex pt-[10px] gap-[200px]  items-center">
+                        <div class="pl-[30px] ">
+                            <p class="text-[18px] text-[black]/60 pb-[5px]">
+                                Total Teachers
+                            </p>
+                            <h1>
+                                24
+                            </h1>
+                        </div>
+                        <div class="bg-[black]/10  w-[50px] h-[50px] rounded-[10px] pt-[10px] pl-[13px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-users h-6 w-6 text-blue-600 dark:text-blue-400" aria-hidden="true">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class=" flex gap-[30px]">
+                    <div>
+                        <div class=" max-w-[700px] mt-[30px] ml-[20px] ">
+            
+                            <div class="border w-[720px] h-[300px] border-[black]/30 rounded-[20px]">
+                                <h1 class="pt-[20px] pb-[30px] pl-[30px]">
+                                    Quick Actions
+                                </h1>
+                                <div class="pb-[40px]">
+                                    </button><button
+                                        class="w-full p-4 text-left max-w-[600px] ml-[20px] rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                        <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-graduation-cap h-5 w-5" aria-hidden="true">
+                                                <path
+                                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                                </path>
+                                                <path d="M22 10v6"></path>
+                                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                            </svg>
+                                            <div>
+                                                <div>Manage Students</div>
+                                                <div class="text-sm text-purple-100">View and manage all students</div>
+                                            </div>
+                                        </div>
+                                    </button></div>
+                                </button><button
+                                    class="w-full p-4 text-left max-w-[600px] ml-[20px] rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white hover:from-purple-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                    <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-graduation-cap h-5 w-5" aria-hidden="true">
+                                            <path
+                                                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                            </path>
+                                            <path d="M22 10v6"></path>
+                                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                        </svg>
+                                        <div>
+                                            <div>Manage Students</div>
+                                            <div class="text-sm text-purple-100">View and manage all students</div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class=" max-w-[700px] mt-[30px] ml-[20px] ">
+            
+                            <div class="border w-[720px] h-[300px] border-[black]/30 rounded-[20px]">
+                                <h1 class="pt-[20px] pb-[30px] pl-[30px]">
+                                    Recent Activity
+                                </h1>
+            
+                                <div class="pl-[20px]">
+                                    <div class="flex items-start gap-3 pb-[20px]">
+                                        <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                                        <div>
+                                            <p class="text-gray-900 dark:text-black text-[20px]">New teacher added</p>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">2 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 pb-[20px]">
+                                        <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                                        <div>
+                                            <p class="text-gray-900 dark:text-black text-[20px]">Students retengs uptodob </p>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">5 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3  pb-[20px]">
+                                        <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                                        <div>
+                                            <p class="text-gray-900 dark:text-black text-[20px]">New students enrolled</p>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">2 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+            </section>
+        </section>
+    </main>
+
+</body>
+
+</html>
