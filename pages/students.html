@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -67,7 +70,7 @@
                 <div class=" border-[1px] pb-[400px] border-[black]/30 w-[300px] pl-[20px]  ">
                     <div class="pt-[20px]  mb-[20px] ">
                         <button
-                            class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                            class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200   hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0"
@@ -79,7 +82,7 @@
                             </svg> <span id="about" class=""><a href="../index.html">Dashboart</a></span></button>
                     </div>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -87,9 +90,9 @@
                             <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                             <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                        </svg><span class=""><a href="./preyekt1.html">Teachers</a></span></button>
+                        </svg><span class=""><a href="./tearcher.html">Teachers</a></span></button>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-graduation-cap h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -98,9 +101,10 @@
                             </path>
                             <path d="M22 10v6"></path>
                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                        </svg><span><a href="../pages/preyekt2.html"><a href=..pages/tailwindcss">Students</a></a></span></button>
+                        </svg><span><a href="../pages/students.html"><a
+                                    href=..pages/tailwindcss">Students</a></a></span></button>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-settings h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -108,11 +112,13 @@
                                 d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
-                        </svg><span>Settings</span></button>
+                        </svg><a href="./preyekt3.html"><span>Settings</span></a></button>
                 </div>
             </div>
         </section>
     </aside>
+
+
     <main class="pt-[60px] pl-[300px] ">
         <section id="about">
             <section>
@@ -140,11 +146,11 @@
                             Students
                         </h1>
                         <p class=" text-[20px] font-[100]">
-                          Showing 80 of 80 students
+                            Showing 80 of 80 students
                         </p>
                     </div>
                     <div>
-                        <button data-slot="button"
+                        <button id="add-teacher" data-slot="button"
                             class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[&gt;svg]:px-3 gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -178,7 +184,7 @@
                             <option value="10-20 years">10-20 years</option>
                             <option value="20+ years">20+ years</option>
                         </select>
-                        <select >
+                        <select>
                             <option value="All Grade">All Grade</option>
                             <option value="Grade 1-4"> Grade 1-4</option>
                             <option value="Grade 5-8"> Grade 5-8</option>
@@ -191,132 +197,102 @@
                             <option value="35+ stars">35+ stars</option>
 
                         </select>
-                       
-                    </div>
+
+                 </div>
                 </div>
             </section>
             <section>
-                <div>
-                    <div
-                        class="border-[1px] border-[black]/30 max-w-[300px] h-[500px] rounded-[20px] ml-[20px] mt-[20px]">
-
-                        <img data-slot="avatar-image"
-                            class="aspect-square size-full w-[80px] h-[80px] rounded-[50%]  justify-center mx-auto pt-[10px]"
-                            alt="Norma Kerluke" src="https://avatars.githubusercontent.com/u/487220">
-                        <h1 class="text-center pt-[7px] font-[600]">vilsom iolns</h1>
-                        <button
-                            class="border border-[black]/20 ml-[auto] bg-[black]/20 mr-[auto] block px-[20px] rounded-[10px]">music</button>
-                        <div class=" flex gap-[30px] justify-center pt-[9px]">
-                            <div class=" flex gap-[2px] items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-briefcase h-4 w-4" aria-hidden="true">
-                                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                    <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                                </svg>
-                                <p>11y</p>
-                            </div>
-
-                            <div class=" flex gap-[2px] items-center">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                <p>55y</p>
-                            </div>
-
-
-                        </div>
-                        <div class=" flex gap-[5px] justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-star h-4 w-4 fill-yellow-400 text-yellow-400" aria-hidden="true">
-                                <path
-                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
-                                </path>
-                                <h1>4.2</h1>
-                            </svg>
-                        </div>
-
-
-
-                        <div class="space-y-2 mb-4 pt-[40px] ml-[20px]">
-                            <div class="flex items-center mt-[10px] gap-2 text-gray-600 dark:text-gray-400 text-sm"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-phone h-4 w-4 flex-shrink-0 text-blue-500" aria-hidden="true">
-                                    <path
-                                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                                    </path>
-                                </svg><span class="truncate">217.436.2529 x3878</span></div>
-                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-mail h-4 w-4 flex-shrink-0 text-green-500" aria-hidden="true">
-                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                                </svg><span class="truncate">Gilbert.Mosciski-Kozey74@yahoo.com</span></div>
-                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-send h-4 w-4 flex-shrink-0 text-blue-400" aria-hidden="true">
-                                    <path
-                                        d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-                                    </path>
-                                    <path d="m21.854 2.147-10.94 10.939"></path>
-                                </svg><span class="truncate">@gilbertmosciski-kozey</span></div>
-                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-linkedin h-4 w-4 flex-shrink-0 text-blue-600"
-                                    aria-hidden="true">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect width="4" height="12" x="2" y="9"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg><span class="truncate">linkedin.com/in/gilbert-mosciski-kozey</span></div>
-                        </div>
-
-
-                        <div class=" flex gap-[20px]  mt-[30px] justify-center">
-                            <div>
-
-                                <button data-slot="button"
-                                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 [&amp;_svg]:shrink-0 outline-none focus-visible:border-black focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-[black] border-[white] text-[white] dark:border-[black] bg-background text-foreground hover:bg-accent hover:text-[black] dark:bg-input/30     dark:hover:bg-input/50 h-8 rounded-md px-3 has-[&gt;svg]:px-2.5 flex-1 gap-2"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-pencil h-4 w-4" aria-hidden="true">
-                                        <path
-                                            d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z">
-                                        </path>
-                                        <path d="m15 5 4 4"></path>
-                                    </svg>Edit</button>
-
-                            </div>
-
-                            <div>
-                                <button data-slot="button"
-                                    class="inline-flex items-center justify-center whitespace-nowrap text-[white] text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 [&amp;_svg]:shrink-0 outline-none focus-visible:border-black focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-black border bg-background dark:bg-input/30 dark:border-input text-[white] h-8 rounded-md px-3 has-[&gt;svg]:px-2.5 flex-1 gap-2 text-white-600 hover:text-red-700"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
-                                        aria-hidden="true">
-                                        <path d="M10 11v6"></path>
-                                        <path d="M14 11v6"></path>
-                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
-                                        <path d="M3 6h18"></path>
-                                        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                    </svg>Delete</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class=" tearcher-cards  grid grid-cols-4 gap-[5px] pl-[30px]  ml-auto mr-auto block pt-[20px]">
+                
                 </div>
             </section>
     </main>
+<div id="outer-modal" class="fixed top-0 left-0 flex items-center  hidden justify-center z-8 w-full h-full bg-[blue]/30  ">
+    <form id="form" class="   max-w-md mx-auto bg-[black]/70 mb-[60px] p-[40px]  rounded-[10px ]">
+        <div class="relative z-0 w-full mb-5 group">
+            <input type=""
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                placeholder=" " />
+            <label for="floating_email"
+                class="absolute text-sm text-[white] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Avatar</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="name" id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                placeholder=" " />
+            <label for=""
+                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">LastName</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="age" name="floating_password" id="floating_password"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                placeholder=" " required />
+            <label for="floating_password"
+                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">science</label>
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="" name="repeat_password" id="floating_repeat_password"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                placeholder=" " required />
+            <label for="floating_repeat_password"
+                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Salory
+            </label>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="name" name="floating_first_name" id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " required />
+                <label for="floating_first_name"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">age</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_last_name" id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " required />
+                <label for="floating_last_name"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">reting</label>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="number" name="floating_phone" id="floating_phone"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " />
+                <label for=""
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_company" id="floating_company"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " required />
+                <label for="floating_company"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">email</label>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="number" name="floating_phone" id="floating_phone"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " required />
+                <label for="floating_phone"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">telegram</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_company" id="floating_company"
+                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                    placeholder=" " />
+                <label for="floating_company"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">linkedin</label>
+            </div>
+        </div>
+        <button id="btn" type="submit"
+            class="text-white bg-[blue] box-border border border-[blue] rounded-[10px] hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Submit</button>
+    </form>
+</div>
 
+<script src="../js/main.js"></script>
+    <script src="../js/students.js"></script>
 </body>
 
 </html>

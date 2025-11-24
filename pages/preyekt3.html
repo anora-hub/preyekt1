@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -67,7 +69,7 @@
                 <div class=" border-[1px] pb-[400px] border-[black]/30 w-[300px] pl-[20px]  ">
                     <div class="pt-[20px]  mb-[20px] ">
                         <button
-                            class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                            class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200   hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0"
@@ -79,7 +81,7 @@
                             </svg> <span id="about" class=""><a href="../index.html">Dashboart</a></span></button>
                     </div>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -87,9 +89,9 @@
                             <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                             <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                        </svg><span class=""><a href="./preyekt1.html">Teachers</a></span></button>
+                        </svg><span class=""><a href="./tearcher.html">Teachers</a></span></button>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-graduation-cap h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -98,9 +100,9 @@
                             </path>
                             <path d="M22 10v6"></path>
                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                        </svg><span><a href="../pages/preyekt2.html">Students</a></span></button>
+                        </svg><span><a href="../pages/students.html">Students</a></span></button>
                     <button
-                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
+                        class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-settings h-5 w-5 flex-shrink-0" aria-hidden="true">
@@ -108,13 +110,13 @@
                                 d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
                             </path>
                             <circle cx="12" cy="12" r="3"></circle>
-                        </svg><span>Settings</span></button>
+                        </svg><a href="./preyekt3.html"><span>Settings</span></a></button>
                 </div>
             </div>
         </section>
     </aside>
     <main class="pt-[60px] pl-[300px] ">
-        <section id="about">
+        <section id="about ">
             <section>
                 <div class="border h-[70px] border-[black]/30">
                     <div class=" flex justify-between pr-[30px] items-center pt-[15px] pl-[30px]">
@@ -177,15 +179,20 @@
             <section>
                 <div>
                     <div class=" border-[1px] border-[black]/30 max-w-[900px] mt-[30px] w-full h-[350px] ml-[20px] rounded-[20px]">
-                        <div>
+                        <div class="flex justify-between px-[30px] items-center">
+                           <div class=" ">
                             <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
                                 Notifications
                             </h1>
                             <p class="text-[20px] pl-[30px] pt-[5px]">
                                 Manage your notification preferences
                             </p>
+                           </div>
+                           <div>
+                           
+                           </div>
                         </div>
-                        <div>
+                        <div class="flex justify-between px-[30px] items-center">
                             <div>
                                 <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
                                     email notifications
@@ -195,11 +202,85 @@
                                 </p>
                             </div>
                             <div>
-                                
+                                <h1>ksdj</h1>
+                            </div>
+                        </div>
+                        <div class="flex justify-between px-[30px] items-center">
+                            <div>
+                                <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
+                                    Push Notifications
+                                </h1>
+                                <p class="text-[20px] pl-[30px] pt-[5px]">
+                                    Recieive push notifications on your devices
+                                </p>
+                            </div>
+                            <div>
+                                <h1>ksdj</h1>
+                            </div>
+                        </div>
+            <div class="flex justify-between px-[30px] items-center">
+                <div>
+                    <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
+                        Weekly Reports
+                    </h1>
+                    <p class="text-[20px] pl-[30px] pt-[5px]">
+                       get weekly reports about school activities
+                    </p>
+                </div>
+                <div>
+                    <h1>ksdj</h1>
+                </div>
+            </div>
+            
+            
+            
+                    </div>
+                </div>
+            </section>
+           
+            <section>
+                <div>
+                    <div class=" border-[1px] border-[black]/30 max-w-[900px] mt-[30px] w-full h-[300px] ml-[20px] rounded-[20px]">
+                        <div class="flex justify-between px-[30px] items-center">
+                            <div class=" ">
+                                <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
+                                    Notifications
+                                </h1>
+                                <p class="text-[20px] pl-[30px] pt-[5px]">
+                                    Manage your notification preferences
+                                </p>
+                            </div>
+                            <div>
+                               
+                            </div>
+                        </div>
+                        <div class="flex justify-between px-[30px] items-center">
+                            <div>
+                                <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
+                                    email notifications
+                                </h1>
+                                <p class="text-[20px] pl-[30px] pt-[5px]">
+                                    Recieive email uptades about your account
+                                </p>
+                            </div>
+                            <div>
+                                <h1>ksdj</h1>
+                            </div>
+                        </div>
+                        <div class="flex justify-between px-[30px] items-center">
+                            <div>
+                                <h1 class="text-[20px] font-bold pl-[30px] pt-[20px]">
+                                    Push Notifications
+                                </h1>
+                                <p class="text-[20px] pl-[30px] pt-[5px]">
+                                    Recieive push notifications on your devices
+                                </p>
+                            </div>
+                            <div>
+                                <h1>ksdj</h1>
                             </div>
                         </div>
                         
-            
             
             
             
@@ -208,7 +289,7 @@
             </section>
             
     </main>
-
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
