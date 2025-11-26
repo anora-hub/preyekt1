@@ -79,7 +79,7 @@
                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
-                            </svg> <span id="about" class=""><a href="../index.html">Dashboart</a></span></button>
+                            </svg> <span id="about" class=""><a href="../pages/index.html">Dashboart</a></span></button>
                     </div>
                     <button
                         class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
@@ -102,7 +102,7 @@
                             <path d="M22 10v6"></path>
                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                         </svg><span><a href="../pages/students.html"><a
-                                    href=..pages/tailwindcss">Students</a></a></span></button>
+                                    href="./students.html">Students</a></a></span></button>
                     <button
                         class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px]  py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -163,11 +163,16 @@
 
             </section>
             <section>
-                <div class="ml-[20px] mt-[30px]">
-                    <input class="
-            border w-[1600px] h-[50px] border-[black]/30 pl-[30px]
-            " placeholder="search students by name or e" type="">
-                </div>
+          <div class="w-full relative mt-[20px] sm:mt-[40px] pl-[20px] ">
+    <input required="" id="search-teacher"
+        class="border-[1px] w-full text-[black] dark:text-gray-400 bg-[white] dark:bg-white-800  border-gray-200 dark:border-gray-600 rounded-lg py-1 outline-none  px-7 h-9"
+        placeholder="Search teachers by name, email, or profession..." type="search">
+    <svg class="absolute top-2 left-[5px] ml-[20px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m21 21-4.34-4.34"></path>
+        <circle cx="11" cy="11" r="8"></circle>
+    </svg>
+          </div>
             </section>
             <section>
                 <div>
@@ -203,7 +208,69 @@
             </section>
             <section>
                 <div class=" tearcher-cards  grid grid-cols-4 gap-[5px] pl-[30px]  ml-auto mr-auto block pt-[20px]">
-                
+                <div class="border-[1px] border-[black]/30 max-w-[300px] w-full h-[440px] rounded-[20px] mr-auto ml-auto block ">
+                    <img class="aspect-square w-[80px] h-[80px] rounded-[50%] mx-auto pt-[10px]" alt="${el.lastName}"
+                        src="${el.avatar}">
+                    <h1 class="text-center pt-[7px] font-[600]">soijcscod</h1>
+                    <div class="flex gap-[5px]  pl-[90px] ml-auto mr-auto block">
+                        <button class="border border-[black]/20 bg-[black]/20 px-[20px] rounded-[10px]">ijdsiajeij</button>
+                        <h1>90 y</h1>
+                    </div>
+                    <div class="flex gap-[5px] justify-center items-center pt-[10px]">
+
+                        <h1>Rating</h1>
+                    </div>
+                    <div class="space-y-2 mb-4 pt-[40px] ml-[20px]">
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone h-4 w-4 flex-shrink-0 text-blue-500" aria-hidden="true">
+                                <path
+                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                                </path>
+                            </svg>
+                            <span>${el.phone}</span>
+                        </div>
+                    
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail h-4 w-4 flex-shrink-0 text-green-500" aria-hidden="true">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                            <span>${el.email}</span>
+                        </div>
+                    
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-send h-4 w-4 flex-shrink-0 text-blue-400" aria-hidden="true">
+                                <path
+                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                </path>
+                                <path d="m21.854 2.147-10.94 10.939"></path>
+                            </svg>
+                            <span>@${el.telegram}</span>
+                        </div>
+                    
+                        <div class="flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-linkedin h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                    
+                            <span>${el.Linkedin}</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-[20px] mt-[30px] justify-center">
+                        <button onClick="editStudent(dwicwijd)" class="px-3 py-1 bg-blue-500 text-white rounded-md">Edit</button>
+                        <button onClick="deleteStudent(jxdjiwd)" class="px-3 py-1 bg-red-500 text-white rounded-md">Delete</button>
+                    </div>
+                </div>
                 </div>
             </section>
     </main>
@@ -291,7 +358,7 @@
     </form>
 </div>
 
-<script src="../js/main.js"></script>
+
     <script src="../js/students.js"></script>
 </body>
 
