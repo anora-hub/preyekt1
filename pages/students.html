@@ -7,7 +7,6 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -79,7 +78,7 @@
                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
-                            </svg> <span id="about" class=""><a href="../pages/index.html">Dashboart</a></span></button>
+                            </svg> <span id="about" class=""><a href="../index.html">Dashboart</a></span></button>
                     </div>
                     <button
                         class="w-full flex items-center mt-[20px]  mb-[20px] gap-3 px-4  max-w-[200px] py-3 rounded-lg transition-all duration-200  hover:bg-gray-100 dark:hover:bg-blue-700 "><svg
@@ -150,7 +149,7 @@
                         </p>
                     </div>
                     <div>
-                        <button id="add-teacher" data-slot="button"
+                        <button id="add-students" data-slot="button"
                             class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[&gt;svg]:px-3 gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -163,16 +162,17 @@
 
             </section>
             <section>
-          <div class="w-full relative mt-[20px] sm:mt-[40px] pl-[20px] ">
-    <input required="" id="search-teacher"
-        class="border-[1px] w-full text-[black] dark:text-gray-400 bg-[white] dark:bg-white-800  border-gray-200 dark:border-gray-600 rounded-lg py-1 outline-none  px-7 h-9"
-        placeholder="Search teachers by name, email, or profession..." type="search">
-    <svg class="absolute top-2 left-[5px] ml-[20px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-        fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="m21 21-4.34-4.34"></path>
-        <circle cx="11" cy="11" r="8"></circle>
-    </svg>
-          </div>
+                <div class="w-full relative mt-[20px] sm:mt-[40px] pl-[20px] ">
+                    <input required="" id="search-teacher"
+                        class="border-[1px] w-full text-[black] dark:text-gray-400 bg-[white] dark:bg-white-800  border-gray-200 dark:border-gray-600 rounded-lg py-1 outline-none  px-7 h-9"
+                        placeholder="Search teachers by name, email, or profession..." type="search">
+                    <svg class="absolute top-2 left-[5px] ml-[20px]" xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m21 21-4.34-4.34"></path>
+                        <circle cx="11" cy="11" r="8"></circle>
+                    </svg>
+                </div>
             </section>
             <section>
                 <div>
@@ -189,7 +189,7 @@
                             <option value="10-20 years">10-20 years</option>
                             <option value="20+ years">20+ years</option>
                         </select>
-                        <select>
+                        <select class="border-[1px] border-[black]/30 w-[200px] px-[10px] py-[5px]" >
                             <option value="All Grade">All Grade</option>
                             <option value="Grade 1-4"> Grade 1-4</option>
                             <option value="Grade 5-8"> Grade 5-8</option>
@@ -203,160 +203,144 @@
 
                         </select>
 
-                 </div>
+                    </div>
                 </div>
             </section>
             <section>
-                <div class=" tearcher-cards  grid grid-cols-4 gap-[5px] pl-[30px]  ml-auto mr-auto block pt-[20px]">
-                <div class="border-[1px] border-[black]/30 max-w-[300px] w-full h-[440px] rounded-[20px] mr-auto ml-auto block ">
-                    <img class="aspect-square w-[80px] h-[80px] rounded-[50%] mx-auto pt-[10px]" alt="${el.lastName}"
-                        src="${el.avatar}">
-                    <h1 class="text-center pt-[7px] font-[600]">soijcscod</h1>
-                    <div class="flex gap-[5px]  pl-[90px] ml-auto mr-auto block">
-                        <button class="border border-[black]/20 bg-[black]/20 px-[20px] rounded-[10px]">ijdsiajeij</button>
-                        <h1>90 y</h1>
-                    </div>
-                    <div class="flex gap-[5px] justify-center items-center pt-[10px]">
+                <div class=" students-cards  grid grid-cols-4 gap-[10px] pl-[30px]  ml-auto mr-auto block pt-[20px]">
 
-                        <h1>Rating</h1>
-                    </div>
-                    <div class="space-y-2 mb-4 pt-[40px] ml-[20px]">
-                        <div class="flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-phone h-4 w-4 flex-shrink-0 text-blue-500" aria-hidden="true">
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                                </path>
-                            </svg>
-                            <span>${el.phone}</span>
-                        </div>
-                    
-                        <div class="flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-mail h-4 w-4 flex-shrink-0 text-green-500" aria-hidden="true">
-                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                            </svg>
-                            <span>${el.email}</span>
-                        </div>
-                    
-                        <div class="flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-send h-4 w-4 flex-shrink-0 text-blue-400" aria-hidden="true">
-                                <path
-                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-                                </path>
-                                <path d="m21.854 2.147-10.94 10.939"></path>
-                            </svg>
-                            <span>@${el.telegram}</span>
-                        </div>
-                    
-                        <div class="flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-linkedin h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden="true">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect width="4" height="12" x="2" y="9"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                    
-                            <span>${el.Linkedin}</span>
-                        </div>
-                    </div>
-                    <div class="flex gap-[20px] mt-[30px] justify-center">
-                        <button onClick="editStudent(dwicwijd)" class="px-3 py-1 bg-blue-500 text-white rounded-md">Edit</button>
-                        <button onClick="deleteStudent(jxdjiwd)" class="px-3 py-1 bg-red-500 text-white rounded-md">Delete</button>
-                    </div>
-                </div>
                 </div>
             </section>
     </main>
-<div id="outer-modal" class="fixed top-0 left-0 flex items-center  hidden justify-center z-8 w-full h-full bg-[blue]/30  ">
-    <form id="form" class="   max-w-md mx-auto bg-[black]/70 mb-[60px] p-[40px]  rounded-[10px ]">
-        <div class="relative z-0 w-full mb-5 group">
-            <input type=""
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " />
-            <label for="floating_email"
-                class="absolute text-sm text-[white] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Avatar</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-            <input type="name" id="floating_email"
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " />
-            <label for=""
-                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">LastName</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-            <input type="age" name="floating_password" id="floating_password"
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " required />
-            <label for="floating_password"
-                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">science</label>
-        </div>
-        <div class="relative z-0 w-full mb-5 group">
-            <input type="" name="repeat_password" id="floating_repeat_password"
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " required />
-            <label for="floating_repeat_password"
-                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Salory
-            </label>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
+    <div id="outer-modal" class="fixed top-0 left-0 hidden flex items-center justify-center w-full h-full bg-[blue]/30 z-50">
+        <form id="form" class="max-w-md mx-auto bg-[black]/70 p-[40px] rounded-[10px] mb-[60px]">
+
+            
             <div class="relative z-0 w-full mb-5 group">
-                <input type="name" name="floating_first_name" id="floating_first_name"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                    placeholder=" " required />
-                <label for="floating_first_name"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">age</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                    placeholder=" " required />
-                <label for="floating_last_name"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">reting</label>
-            </div>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="number" name="floating_phone" id="floating_phone"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                <input type="text" id="avatar"
+                    class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-blue-500 peer"
                     placeholder=" " />
-                <label for=""
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone</label>
+                <label for="avatar"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                    Avatar
+                </label>
             </div>
+
+            <!-- LastName -->
             <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_company" id="floating_company"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                    placeholder=" " required />
-                <label for="floating_company"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">email</label>
-            </div>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="number" name="floating_phone" id="floating_phone"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                    placeholder=" " required />
-                <label for="floating_phone"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">telegram</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_company" id="floating_company"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
+                <input type="text" id="lastname"
+                    class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-blue-500 peer"
                     placeholder=" " />
-                <label for="floating_company"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">linkedin</label>
+                <label for="lastname"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                    Last Name
+                </label>
             </div>
-        </div>
-        <button id="btn" type="submit"
-            class="text-white bg-[blue] box-border border border-[blue] rounded-[10px] hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Submit</button>
-    </form>
-</div>
+
+            <select class="border-b border-white px-3 py-2 w-full text-[white]">
+                <option class="text-[black]">All Grade</option>
+                <option class="text-[black]"  >Grade-1</option>
+                <option  class="text-[black]" >Grade-2</option>
+                <option class="text-[black]"  >Grade-3</option>
+                <option class="text-[black]"   >Grade-4</option>
+            </select>
+
+          
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" id="salary"
+                    class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-blue-500 peer"
+                    placeholder=" " />
+                <label for="salary"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                    email
+                </label>
+            </div>
+
+           
+
+
+          
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="number" id="age"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="age"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Age
+                    </label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="number" id="phone"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="phone"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Phone
+                    </label>
+                </div>
+
+            </div>
+
+          
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" id="telegram"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="telegram"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        Telegram
+                    </label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" id="linkedin"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="linkedin"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        LinkedIn
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex items-center  gap-[60px]">
+                <div class=" ">
+                    <select id="allreting" name="allreting"
+                        class=" border-b border-white px-3 py-2 w-full text-[white]">
+                        <option class="text-black">All Rating</option>
+                        <option class="text-[black]" value="4.5">4.5 stars</option>
+                        <option  class="text-[black]" value="4.0">4.0 stars</option>
+                        <option   class="text-[black]" value="3.5">3.5 stars</option>
+                    </select>
+
+
+                </div>
+
+                <div class=" ">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" id="linkedin"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="linkedin"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        coins
+                    </label>
+                </div>
+                </div>
+            </div>
+          
+            <button id="btn" type="submit"
+                class="text-white bg-blue-600 border border-blue-600 mt-[30px] rounded-[10px] px-4 py-2.5 hover:bg-blue-700">
+                Submit
+            </button>
+
+        </form>
+    </div>
+
+
+
 
 
     <script src="../js/students.js"></script>

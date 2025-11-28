@@ -159,25 +159,21 @@
 
             </section>
             <section>
-                <div class="ml-[20px] mt-[30px]">
-                    <input class="
-            border h-[50px] w-full border-[black]/30 pl-[30px]
+                <div class="ml-[20px] mt-[30px] mr-[30px] ">
+                    <input id="search" class="
+            border h-[50px] w-full border-[black]/30 pr-[20px] pl-[30px] rounded-[10px]
             " placeholder="search tezchers by name , email , or preffiesion..." type="">
                 </div>
             </section>
         <section >
             <div class="mt-[30px] grid grid-cols-1 ml-[30px] sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <select class="border border-black/30 px-3 py-2 w-full">
+                <select  class="border border-black/30 px-3 py-2 w-full">
                     <option value="All Gender">All Gender</option>
                     <option value="male">male</option>
                     <option value="famile">famile</option>
                 </select>
-                <select class="border border-black/30 px-3 py-2 w-full">
-                    <option value="All Experiece">All Experiece</option>
-                    <option value="0-5 years">0-5 years</option>
-                    <option value="6-10 years">6-10 years</option>
-                    <option value="10-20 years">10-20 years</option>
-                    <option value="20+ years">20+ years</option>
+                <select id="salary" class="border border-black/30 px-3 py-2 w-full">
+                   
                 </select>
                 <select class="border border-black/30 px-3 py-2 w-full">
                     <option value="All reating">All reating</option>
@@ -195,6 +191,27 @@
                 </select>
             </div>
         </section>
+
+
+       
+               
+            
+<section>
+    <div class="flex gap-[30px] items-center ">
+        <ul id="pagination" class="flex items-center my-[10px] ml-[40px] mt-[30px]  gap-[5px]">
+        </ul>
+        <div class="flex border border-black/30  px-[20px] w-[100px] h-[30px] mt-[30px] ">
+            <select id="sortName" class=" ">
+                <option value="all">All</option>
+                <option value="asc">A-Ch</option>
+                <option value="desc">Ch-A</option>
+            </select>
+        </div>
+       
+    </div>
+</section>
+
+
             <section>
                 <div class=" tearcher-cards grid grid-cols-4 gap-[20px] mt-[50px] " >
                     <div class="ml-auto mr-auto block pt-[20px] ">
@@ -203,7 +220,7 @@
                 </div>
             </section>
     </main>
-   <div id="outer-modal" class="fixed top-0 left-0 flex items-center  justify-center z-8 w-full h-full bg-[blue]/30  ">
+   <div id="outer-modal" class="fixed top-0 left-0 flex items-center hidden  justify-center z-8 w-full h-full bg-[blue]/30  ">
     <form  id="form" class="  max-w-md mx-auto bg-[black]/70 mb-[60px] p-[40px]  rounded-[10px ]">
         <div class="relative z-0 w-full mb-5 group">
             <input type=""  
@@ -220,19 +237,24 @@
                 class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">LastName</label>
         </div>
         <div class="relative z-0 w-full mb-5 group">
-            <input type="age" name="floating_password" id="floating_password"
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " required />
-            <label for="floating_password"
-                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">science</label>
+            <select  name="science"  class="border-b border-white px-3 py-2 w-full text-[white]">
+                <option class="text-[black]" value="All profeission">All profeission</option>
+                <option class="text-[black]" value="english leturatura">english leturatura</option>
+                <option class="text-[black]" value="matemathist">matemathist</option>
+                <option class="text-[black]" value="music">music</option>
+                <option class="text-[black]" value="Camputer sciance">Camputer sciance</option>
+                <option class="text-[black]" value="Spanesh">Spanesh</option>
+            </select>
         </div>
         <div class="relative z-0 w-full mb-5 group">
-            <input type="" name="repeat_password" id="floating_repeat_password"
-                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                placeholder=" " required />
-            <label for="floating_repeat_password"
-                class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Salory
-            </label>
+            <select class="border-b border-white px-3 py-2 w-full text-[white]">
+                <option class="text-[black]" value="All Experiece">All Experiece</option>
+              
+                <option class="text-[black]" value="0-5 years">0-5 years</option>
+                <option class="text-[black]" value="6-10 years">6-10 years</option>
+                <option class="text-[black]" value="10-20 years">10-20 years</option>
+                <option class="text-[black]" value="20+ years">20+ years</option>
+            </select>
         </div>
         <div class="grid md:grid-cols-2 md:gap-6">
             <div class="relative z-0 w-full mb-5 group">
@@ -243,11 +265,12 @@
                     class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">age</label>
             </div>
             <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name"
-                    class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-[white] appearance-none focus:outline-none focus:ring-0 focus:border-brand peer"
-                    placeholder=" " required />
-                <label for="floating_last_name"
-                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">reting</label>
+                <select class="border-b border-white px-3 py-2 w-full text-[white]">
+                    <option class="text-[black]" value="All reating">All reating</option>
+                    <option class="text-[black]" value="45+ stars">45+ stars</option>
+                    <option class="text-[black]" value="40+ stars">40+ stars</option>
+                    <option class="text-[black]" value="35+ stars">35+ stars</option>
+                </select>
             </div>
         </div>
         <div class="grid md:grid-cols-2 md:gap-6">
