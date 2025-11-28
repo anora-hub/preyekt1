@@ -107,15 +107,6 @@ class=" ${page === pages ? "hidden" : ""} px-[10px] py-[5px] rounded-[5px] bg-[b
 
 
 
-
-
-
-
-
-
-
-
-
         content.innerHTML = "";
 
         res.data.forEach((el) => {
@@ -188,7 +179,7 @@ class=" ${page === pages ? "hidden" : ""} px-[10px] py-[5px] rounded-[5px] bg-[b
                 class="bg-black text-white px-3 rounded-md">Edit</button>
 
             <button onClick="deleteTeacher(${el.id})"
-                class="bg-red-600 text-white px-3 rounded-md">Delete</button>
+                class="bg-red-600  text-white px-3 rounded-md    ">Delete</button>
         </div>
      </div>
     `

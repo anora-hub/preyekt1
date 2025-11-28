@@ -20,6 +20,7 @@ outerModal.addEventListener("click" , function(){
     outerModal.classList.add("hidden")
     selected=null
 })
+
 async function getData(container) {
     try {
         let res = await axios.get(
@@ -104,6 +105,7 @@ async function getData(container) {
         console.log(err);
     }
 }
+
 getData(studentsCards);
 
 async  function deleteStudent(id){
@@ -124,7 +126,6 @@ async function editStudent(id){
     outerModal.classList.remove("hidden")
     let teacher = await axios.get(`https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students/${id}`)
 
-
 let studentsObj = teacher.data;
 form[1].value= studentsObj.data;
     form[0].value = studentsObj.avatar; 
@@ -134,33 +135,26 @@ form[1].value= studentsObj.data;
     form[4].value = studentsObj.age;
     form[5].value = studentsObj.phone;
     form[6].value = studentsObj.telegram;
-    form[7].value = studentsObj.linkedin;
+    form[7].value = studentsObj.Linkedin;
     form[8].value = studentsObj.rating ||"";
     form[9].value = studentsObj.coins;
-    
-    
-    
-    
     console.log(studentsObj);
-
-
 }
-
 
    form.addEventListener("submit" , function(e){
     e.preventDefault();
     let studentsObj={}
     studentsObj.avatar = form[0].value
     studentsObj.LastName = form[1].value
-    studentsObj.science = form[2].value
-    studentsObj.grade = form[3].value
+    studentsObj.grade = form[2].value
+    studentsObj.email = form[3].value
     studentsObj.age = form[4].value
-    studentsObj.rating = form[5].value
-    studentsObj.coins = form[6].value
-    studentsObj.phone= form[7].value
+    studentsObj.phone = form[5].value
+    studentsObj.telegram = form[6].value
+    studentsObj.Linkedin= form[7].value
     studentsObj.email = form[8].value
-    studentsObj.telegram = form[9].value
-    studentsObj.linkedin = form[10].value
+    studentsObj.rating = form[9].value
+    studentsObj.coins = form[10].value
     
 console.log(studentsObj);
     addteachers(studentsObj)

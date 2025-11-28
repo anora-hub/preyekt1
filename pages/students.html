@@ -226,7 +226,7 @@
                 </label>
             </div>
 
-            <!-- LastName -->
+        
             <div class="relative z-0 w-full mb-5 group">
                 <input type="text" id="lastname"
                     class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-blue-500 peer"
@@ -237,13 +237,15 @@
                 </label>
             </div>
 
-            <select class="border-b border-white px-3 py-2 w-full text-[white]">
-                <option class="text-[black]">All Grade</option>
-                <option class="text-[black]"  >Grade-1</option>
-                <option  class="text-[black]" >Grade-2</option>
-                <option class="text-[black]"  >Grade-3</option>
-                <option class="text-[black]"   >Grade-4</option>
-            </select>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" id="lastname"
+                    class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-blue-500 peer"
+                    placeholder=" " />
+                <label for="lastname"
+                    class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                    grade
+                </label>
+            </div>
 
           
             <div class="relative z-0 w-full mb-5 group">
@@ -255,9 +257,6 @@
                     email
                 </label>
             </div>
-
-           
-
 
           
             <div class="grid md:grid-cols-2 md:gap-6">
@@ -305,20 +304,18 @@
                 </div>
             </div>
 
-            <div class="flex items-center  gap-[60px]">
-                <div class=" ">
-                    <select id="allreting" name="allreting"
-                        class=" border-b border-white px-3 py-2 w-full text-[white]">
-                        <option class="text-black">All Rating</option>
-                        <option class="text-[black]" value="4.5">4.5 stars</option>
-                        <option  class="text-[black]" value="4.0">4.0 stars</option>
-                        <option   class="text-[black]" value="3.5">3.5 stars</option>
-                    </select>
 
-
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" id="telegram"
+                        class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
+                        placeholder=" " />
+                    <label for="telegram"
+                        class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        reating
+                    </label>
                 </div>
-
-                <div class=" ">
+            
                 <div class="relative z-0 w-full mb-5 group">
                     <input type="text" id="linkedin"
                         class="block py-2.5 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white peer focus:outline-none"
@@ -328,9 +325,9 @@
                         coins
                     </label>
                 </div>
-                </div>
             </div>
-          
+      
+  
             <button id="btn" type="submit"
                 class="text-white bg-blue-600 border border-blue-600 mt-[30px] rounded-[10px] px-4 py-2.5 hover:bg-blue-700">
                 Submit
