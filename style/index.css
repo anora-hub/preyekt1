@@ -1,0 +1,619 @@
+/* General Dark Mode */
+.dark body {
+    background-color: #121024;
+    color: #e5e5e5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+.dark header {
+    background-color: rgb(49, 39, 75);
+}
+
+.dark header svg path {
+    fill: #ffffff;
+    /* header ikonalarini oq rang qilish */
+}
+
+/* Buttons */
+.dark button {
+    background-color: #2c1f50;
+    color: #e5e5e5;
+    border-color: #6b5ca5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark button:hover {
+    background-color: #3a2a70;
+}
+
+/* Sidebar */
+.dark aside {
+    background-color: #1f1835;
+    color: #e5e5e5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark aside button:hover {
+    background-color: #3a2a70;
+}
+
+/* Sidebar links */
+.dark aside a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.dark aside a:hover {
+    color: #ffffff;
+}
+
+/* Cards / sections in main */
+.dark main .border {
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: #1e1b2f;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Quick Actions buttons gradient override for dark mode */
+.dark .bg-gradient-to-r.from-blue-500 {
+    background: linear-gradient(to right, #4b3b7b, #5c48a1);
+}
+
+.dark .bg-gradient-to-r.from-purple-500 {
+    background: linear-gradient(to right, #5a3b7f, #6e4fb0);
+}
+
+/* Text overrides */
+.dark h1,
+.dark h2,
+.dark p,
+.dark span {
+    color: #e5e5e5;
+}
+
+/* Small text inside cards */
+.dark .text-gray-600 {
+    color: #b0aee0;
+}
+
+/* Icons in cards */
+.dark .lucide path,
+.dark .lucide circle {
+    stroke: #e5e5e5;
+}
+
+/* Dark mode toggle icon */
+.dark #mode svg path {
+    stroke: #ffffff;
+}
+
+/* Other UI elements */
+.dark .border-[black] {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .bg-[black] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+ 
+.dark{
+background-color: rgba(4, 2, 24, 0.767);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark mode uchun umumiy body */
+.dar body {
+    background-color: #121024;
+    color: #e5e5e5;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.dar header {
+    background-color: #1f1835;
+    transition: background-color 0.3s;
+}
+
+.dar header svg path {
+    fill: #ffffff;
+}
+
+/* Sidebar */
+.dar aside {
+    background-color: #1c1630;
+    color: #e5e5e5;
+    transition: background-color 0.3s;
+}
+
+.dar aside .border,
+.dar aside button {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dar aside button:hover {
+    background-color: #2c1f50;
+    color: #ffffff;
+}
+
+/* Main content */
+.dar main {
+    background-color: #181428;
+    color: #e5e5e5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Border va containerlar */
+.dar .border {
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: #1e1b2f;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Buttonlar */
+.dar button {
+    background-color: #2c1f50;
+    color: #e5e5e5;
+    border-color: #6b5ca5;
+    transition: all 0.3s;
+}
+
+.dar button:hover {
+    background-color: #3b2a6c;
+    border-color: #7b5dd3;
+}
+
+/* Input va selectlar */
+.dar input,
+.dar select {
+    background-color: #2b223f;
+    color: #e5e5e5;
+    border-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.dar input:focus,
+.dar select:focus {
+    border-color: #7b5dd3;
+    outline: none;
+}
+
+/* Gradient backgroundlar */
+.dar .bg-gradient-to-r.from-blue-500 {
+    background: linear-gradient(to right, #4b3b7b, #5c48a1);
+}
+
+.dar .bg-gradient-to-r.to-purple-600 {
+    background: linear-gradient(to right, #5a3b7f, #6e4fb0);
+}
+
+/* Matnlar */
+.dar h1,
+.dar h2,
+.dar p,
+.dar span {
+    color: #e5e5e5;
+}
+
+/* Modal */
+.dar #outer-modal {
+    background-color: rgba(0, 0, 50, 0.5);
+}
+
+.dar #form {
+    background-color: #1e1b2f;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e5e5e5;
+    transition: all 0.3s;
+}
+
+/* Floating input label */
+.dar #form label {
+    color: #e5e5e5;
+}
+
+.dar #form input,
+.dar #form select {
+    color: #e5e5e5;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+}
+
+.dar #mod svg path {
+    stroke: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== Dark Mode using .da ============== */
+.da {
+    background-color: #121212;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.da header {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+.da header svg path {
+    stroke: #e5e5e5;
+    fill: #e5e5e5;
+}
+
+.da header button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.da header button:hover {
+    background-color: #333;
+}
+
+/* Sidebar / aside */
+.da aside {
+    background-color: #1e1b2f;
+    border-right: 1px solid #333;
+    color: #e5e5e5;
+}
+
+.da aside .border-[black] {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.da aside button {
+    background-color: transparent;
+    color: #e5e5e5;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.da aside button:hover {
+    background-color: #333;
+}
+
+/* Main content */
+.da main {
+    background-color: #121212;
+}
+
+/* Cards / sections */
+.da main .border,
+.da main .border {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.da main h1,
+.da main h4,
+.da main p,
+.da main span {
+    color: #e5e5e5;
+}
+
+/* Inputs */
+.da input {
+    background-color: transparent !important;
+    color: #e5e5e5 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px;
+    padding: 6px 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.da input:focus {
+    border-color: #00f !important;
+}
+
+/* Buttons */
+.da button {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.da button:hover {
+    background-color: #333 !important;
+}
+
+/* Cards hover */
+.da main .border:hover {
+    background-color: #1f1f1f;
+}
+
+/* SVG icons */
+.da svg path {
+    stroke: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* Modal overlay */
+.da #outer-modal {
+    background-color: rgba(0, 0, 50, 0.5);
+}
+
+/* Toggle switches (example) */
+.da .toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.da .toggle::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: 0.3s;
+}
+
+.da .toggle.active::after {
+    left: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons in DOL style */
+.dol button {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dol button:hover {
+    background-color: #333 !important;
+    transform: translateY(-2px);
+}
+
+/* Cards hover effect */
+.dol main .border:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Inputs & selects */
+.dol input,
+.dol select {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 8px 12px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.dol input:focus,
+.dol select:focus {
+    border-color: #888;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar buttons */
+.dol aside button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    border: 1px solid #555;
+    margin: 10px 0;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.dol aside button:hover {
+    background-color: #333;
+    transform: translateX(2px);
+}
+
+/* Header */
+.dol header {
+    background-color: #111;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Main background */
+.dol main {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Modal */
+.dol #outer-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Form inside modal */
+.dol #form {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dol #form input,
+.dol #form select {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dol #form input:focus {
+    border-color: #888;
+}

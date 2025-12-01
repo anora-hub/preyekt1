@@ -3,6 +3,27 @@ let addStudents = document.getElementById("add-students");
 let form = document.getElementById("form");
 let outerModal = document.getElementById("outer-modal")
 let selected = null
+let pagination = document.getElementById("pagination")
+let page=1
+let sortStudents = document.getElementById("sortName")
+let sortName = "all"
+let search= ""
+let searchInput = document.getElementById("search")
+
+
+sortStudents.addEventListener("click" , function(e){
+     sortName = e.target.value
+console.log(sortName);
+    getData(studentsCards, page, sortName ,search);
+    
+})
+
+searchInput.addEventListener("input", function(e){
+    search = e.target.value
+    getData(studentsCards, page, sortName,search)
+
+})
+
 
 addStudents.addEventListener("click" , function(){
     for (let el of form){
@@ -21,11 +42,48 @@ outerModal.addEventListener("click" , function(){
     selected=null
 })
 
-async function getData(container) {
+async function getData(container, page, sortName ,search) {
     try {
         let res = await axios.get(
-            "https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students"
+            `https://6921d266512fb4140be178ed.mockapi.io/students?page=${page}&limit=10&${sortName === "all" ? "" :`sortBy=LastName&order=${sortName}`
+            }&${search ? `&search=${search}` : ""}`
+           
         );
+
+        let res1 = await axios.get(
+            `https://6921d266512fb4140be178ed.mockapi.io/students?${search ? `&search=${search}` : ""}`
+        );
+        let pages = Math.ceil(res1.data.length / 10)
+        console.log(pages);
+
+        pagination.innerHTML=""
+        
+        pagination.innerHTML += `
+         <li
+         onClick="changePage(${page-1})"
+         class="   ${page === 1 ? "hidden" : ""}   border  border-[black]/40     px-[10px] py-[5px] rounded-[5px] bg-[white]  text-[black] ">
+                        orqaga
+                    </li>
+        `
+        
+for(let i=1; i<=pages; i++){
+pagination.innerHTML+=`
+ <li
+ onClick="changePage(${i})"
+ class="    ${page === i ? " border border-[red] text-[black]" : ""}  border  border-[black]/40    px-[10px] py-[5px] rounded-[5px] bg-[white]  text-[black]" >
+                        ${i}
+                    </li>
+`
+}
+
+pagination.innerHTML +=`
+ <li
+ onClick="changePage(${page + 1})"
+ class="   ${page === pages ? "hidden" : ""}      border  border-[black]/40    px-[10px] py-[5px] rounded-[5px] bg-[white]  text-[black]"  >
+                        oldinga
+                    </li>
+`
+
 
         container.innerHTML = ""
 
@@ -41,7 +99,7 @@ async function getData(container) {
 
         <div class="flex gap-[5px] ml-auto mr-auto items-center justify-center pt-[10px]">
             <button class="border border-[black]/20 bg-[black]/20 px-[20px] rounded-[10px]">
-                grade ${el.grade}
+             grade ${el.grade}
             </button>
             <h1>${el.age}</h1>
         </div>
@@ -91,10 +149,10 @@ async function getData(container) {
 
         <div class="flex gap-[20px] mt-[30px] justify-center">
             <button onclick="editStudent('${el.id}')" 
-                class="px-3 py-1 bg-blue-500 text-white rounded-md">Edit</button>
+                class="bg-[white] text-white px-[40px] py-[8px] rounded-md  hover:bg-[black]">Edit</button>
 
             <button onclick="deleteStudent('${el.id}')" 
-                class="px-3 py-1 bg-red-500 text-white rounded-md">Delete</button>
+                class="bg-[white]  px-[40px] py-[8px] text-white px-3 rounded-md  hover:bg-[red] ">Delete</button>
         </div>
 
     </div>
@@ -106,13 +164,18 @@ async function getData(container) {
     }
 }
 
-getData(studentsCards);
+function changePage(i){
+    getData(studentsCards, i, sortName, search);
+
+
+}
+getData(studentsCards, page, sortName, search);
 
 async  function deleteStudent(id){
 try{
-    await axios.delete(`https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students/${id}`)
+    await axios.delete(`https://6921d266512fb4140be178ed.mockapi.io/students/${id}`)
     alert("malumot o'chirilsinmi");
-    getData(studentsCards);
+    getData(studentsCards, page, sortName, search);
 
 
 }catch(err){
@@ -121,25 +184,31 @@ try{
 }
 }
  
-async function editStudent(id){
+async function editStudent(id) {
     selected = id;
-    outerModal.classList.remove("hidden")
-    let teacher = await axios.get(`https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students/${id}`)
+    outerModal.classList.remove("hidden");
 
-let studentsObj = teacher.data;
-form[1].value= studentsObj.data;
-    form[0].value = studentsObj.avatar; 
-    form[1].value = studentsObj.LastName;
-    form[2].value = studentsObj.grade || ""; 
-    form[3].value = studentsObj.email;
-    form[4].value = studentsObj.age;
-    form[5].value = studentsObj.phone;
-    form[6].value = studentsObj.telegram;
-    form[7].value = studentsObj.Linkedin;
-    form[8].value = studentsObj.rating ||"";
-    form[9].value = studentsObj.coins;
-    console.log(studentsObj);
+    try {
+        let res = await axios.get(`https://6921d266512fb4140be178ed.mockapi.io/students/${id}
+`);
+        let el = res.data;
+
+        form[0].value = el.avatar;
+        form[1].value = el.LastName;
+        form[2].value = el.grade;
+        form[3].value = el.email;
+        form[4].value = el.age;
+        form[5].value = el.phone;
+        form[6].value = el.telegram;
+        form[7].value = el.Linkedin;
+        form[8].value = el.rating;
+        form[9].value = el.coins;
+
+    } catch (err) {
+        console.log( err);
+    }
 }
+
 
    form.addEventListener("submit" , function(e){
     e.preventDefault();
@@ -152,13 +221,12 @@ form[1].value= studentsObj.data;
     studentsObj.phone = form[5].value
     studentsObj.telegram = form[6].value
     studentsObj.Linkedin= form[7].value
-    studentsObj.email = form[8].value
-    studentsObj.rating = form[9].value
-    studentsObj.coins = form[10].value
+    studentsObj.rating = form[8].value
+    studentsObj.coins = form[9].value
     
 console.log(studentsObj);
     addteachers(studentsObj)
-    getData(studentsCards)
+       getData(studentsCards, page, sortName, search)
     outerModal.classList.add("hidden")
 
 
@@ -168,12 +236,12 @@ async function addteachers(payload){
     try{
 
         if(selected){
-            await axios.put(`https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students/${selected}`, payload)
+            await axios.put(`https://6921d266512fb4140be178ed.mockapi.io/students/${selected}`, payload)
         }else{
-            await axios.post("https://69207def31e684d7bfcd401b.mockapi.io/teachers/1/students", payload)
+            await axios.post("https://6921d266512fb4140be178ed.mockapi.io/students", payload)
 
         }
-        getData(studentsCards)
+        getData(studentsCards, page, sortName, search)
         outerModal.classList.add("hidden")
 
 
@@ -184,7 +252,7 @@ console.log(err);
     }
 }
 
-console.log(getData);
+
 
 
 

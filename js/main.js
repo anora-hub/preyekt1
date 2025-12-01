@@ -14,9 +14,6 @@ let salary = document.getElementById("salary")
 
 
 
-
-
-
 sortTeacher.addEventListener("click" , function(e){
     
      sortName = e.target.value
@@ -29,8 +26,6 @@ searchInput.addEventListener("input" , function(e){
     getData(tearcherCards, page, sortName , search)
 
 })
-
-
 
 
 
@@ -51,8 +46,6 @@ outerModal.addEventListener("click", function () {
 form.addEventListener("click", function (e) {
     e.stopPropagation()
 })
-
-
 
 async function getData(content ,page , sortName , search) {
     console.log(search);
@@ -78,7 +71,7 @@ async function getData(content ,page , sortName , search) {
 pagination.innerHTML+=`
  <li 
  onClick="changePage(${page-1})"
- class=" ${page === 1 ? "hidden" :""} px-[10px] py-[5px] rounded-[5px] bg-[blue] text-[white] font-[500] cursor-pointer ">
+ class=" ${page === 1 ? "hidden" :""} px-[10px] py-[5px] rounded-[5px] bg-[] text-[black] font-[500] cursor-pointer border border-[black]/40 ">
                         orqaga
                     </li>
 `
@@ -87,19 +80,16 @@ pagination.innerHTML += `
 
 <li 
 onClick="changePage(${i})"
-class=" ${page === i? "bg-[red]" : ""}  px-[10px] py-[5px] rounded-[5px] bg-[blue] text-[white] font-[500] cursor-pointer ">
+class=" ${page === i? " border border-[red] text-[black]" : ""}  px-[10px] py-[5px] rounded-[5px] bg-[] text-[black] font-[500] cursor-pointer border border-[black]/40 ">
                         ${i}
                     </li>
 `
-
 }
-
-
 
 pagination.innerHTML +=`
 <li
 onClick="changePage(${page + 1})"
-class=" ${page === pages ? "hidden" : ""} px-[10px] py-[5px] rounded-[5px] bg-[blue] text-[white] font-[500] cursor-pointer ">
+class=" ${page === pages ? "hidden" : ""} px-[10px] py-[5px] rounded-[5px] bg-[] text-[black] font-[500] cursor-pointer border border-[black]/40  ">
                         oldinga
                     </li>
 `
@@ -176,10 +166,10 @@ class=" ${page === pages ? "hidden" : ""} px-[10px] py-[5px] rounded-[5px] bg-[b
 
         <div class="flex gap-[20px] mt-[30px] justify-center">
             <button onClick="edit(${el.id})"
-                class="bg-black text-white px-3 rounded-md">Edit</button>
+                class="bg-[white] text-white px-[40px] py-[8px] rounded-md  hover:bg-[black]  ">Edit</button>
 
             <button onClick="deleteTeacher(${el.id})"
-                class="bg-red-600  text-white px-3 rounded-md    ">Delete</button>
+                class="bg-[white]  px-[40px] py-[8px] text-white px-3 rounded-md  hover:bg-[red]  ">Delete</button>
         </div>
      </div>
     `
@@ -288,6 +278,3 @@ async function edit(id) {
     }
 }
 
-axios.get('https://6921d266512fb4140be178ed.mockapi.io/teachers')
-  .then(res => console.log(res.data))
-  .catch(err => console.error(err));
